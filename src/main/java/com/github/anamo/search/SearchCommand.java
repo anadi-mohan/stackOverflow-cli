@@ -3,9 +3,8 @@ package com.github.anamo.search;
 import com.github.anamo.StackOverflowCliCommand;
 import com.github.anamo.api.Question;
 import com.github.anamo.api.StackOverflowHttpClient;
+import jakarta.inject.Inject;
 import picocli.CommandLine;
-
-import javax.inject.Inject;
 
 @CommandLine.Command(name = "search", description = "Search questions matching criteria", mixinStandardHelpOptions = true)
 final public class SearchCommand implements Runnable{
